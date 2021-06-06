@@ -1,0 +1,46 @@
+body, 
+html {
+    height: 100%;
+}
+  
+.header {
+    background-image: url("../media/headerBackground.jpg");
+    height: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dispayPicture {
+    max-width: 350px;
+    border-radius: 10px;
+}
+
+#navbar {
+    background-color: #ffffff41;
+}
+
+#navbar a{
+    font-size: 40px;
+    color: #fff;
+    text-decoration: none;
+    opacity: .8;
+}
+
+#navbar a:hover{
+    opacity: 1;
+}
+
+.heading {
+    font-size: 50px;
+}
+
+.details {
+    font-size: 25px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
