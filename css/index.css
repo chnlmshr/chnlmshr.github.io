@@ -1,33 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    scroll-behavior: smooth;
+}
+
 body, 
 html {
     height: 100%;
+    margin: 0;
+    font-family: "Poppins";
 }
   
-.header {
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
     background-image: url("../media/headerBackground.jpg");
-    height: 75%;
+    height: 500px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.dispayPicture {
-    max-width: 350px;
-    border-radius: 10px;
+.header {
+    padding-top: 7%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-#navbar {
+.headerText {
+    color: #fff;
+    text-align: center;
+}
+
+.headerText h1 {
+    margin-top: 0;
+}
+
+.headerImage {
+    max-width: 250px;
+    border-radius: 100%;
+}
+
+.nav {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    justify-items: flex-end;
     background-color: #ffffff41;
 }
 
-#navbar a{
-    font-size: 40px;
+.nav a{
+    font-size: 2vw;
     color: #fff;
     text-decoration: none;
     opacity: .8;
 }
 
-#navbar a:hover{
+.nav a:hover{
     opacity: 1;
 }
 
@@ -36,11 +69,111 @@ html {
 }
 
 .details {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
+    background-color: #6e6e6e;
+    justify-content: space-evenly;
+}
+
+.container{
+    padding: 50px 0px;
+}
+
+.container > div {
+    padding: 100px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.details div {
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.iconify {
+    margin: 30px 20px;
+    font-size: 35px;
+    color: #000;
+}
+
+hr {
+    margin: 20px 20%;
+    color: #c4c4c420;
+}
+
+@media screen and (max-width: 1040px){
+    .header {
+        padding-top: 10%;
+    }
+}
+
+@media screen and (max-width: 645px){
+      
+.headerContainer {
+    height: 560px;
+}
+.headerText {
+    padding: 50px;
+    order: 2;
+}
+.headerImage {
+    width: 200px;
+}
+.container > div {
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.iconify {
+    margin: 20px 10px;
+    font-size: 25px;
+    color: #000;
+}
+
+.nav a{
+    font-size: 4vw;
+}
+}
+
+@media screen and (max-width: 380px){
+      
+.headerContainer {
+    height: 600px;
+}
+
+.headerText {
+    padding: 50px;
+    order: 2;
+}
+
+.container > div {
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.details {
+    padding: 0px 20px;
+}
+
 }
