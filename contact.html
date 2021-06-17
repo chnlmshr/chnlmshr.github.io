@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/contact.css" />
     <title>Chanchal Mishra</title>
   </head>
 
@@ -12,68 +13,46 @@
     <div class="headerContainer">
       <div class="header">
         <div class="headerText">
-          <h1>Chanchal Mishra</h1>
-          <p>Undergraduate Student at Chandigarh University</p>
-          <div>Design | Develop | Deploy</div>
+          <h1>Cantact Me</h1>
+          <p>Always Happy to Help :)</p>
+          <div>
+            <a
+              href="http://www.linkedin.com/in/chanchal-mishra-0661561b1"
+              target="_blank"
+              >Linkedin</a
+            >
+            | <a href="mailto:19bcs1090@gmail.com" target="_blank">Email</a> |
+            <a href="http://instagram.com/chanchalmishra_" target="_blank"
+              >Instagram DM</a
+            >
+          </div>
         </div>
-        <img
-          class="headerImage"
-          src="media/displayPicture.jpeg"
-          alt="Display Picture"
-        />
       </div>
       <div class="nav" id="nav">
-        <div class="navItem active"><a href="#about">About</a></div>
+        <div class="navItem"><a href="/">About</a></div>
         <div class="navItem"><a href="/projects.html">Projects</a></div>
         <div class="navItem"><a href="/certificates.html">Certificates</a></div>
-        <div class="navItem"><a href="/contact.html">Contact</a></div>
+        <div class="navItem active"><a href="#contact">Contact</a></div>
       </div>
     </div>
-    <div class="container" id="about">
-      <div>
-        <div class="heading">Who am I</div>
-        <div class="details">
-          I am Chanchal Kumar Mishra,<br />
-          born in Bihar, India <br />
-          grown in Punjab, India.<br />
-          <br />
-          Currently pursuing Bachelors in<br />
-          Computer Science and Engineering<br />
-          from Chandigarh University.
-        </div>
-      </div>
-      <hr />
-      <div>
-        <div class="heading">Interests</div>
-        <div class="details">
-          Love Working on Cool Projects<br />
-          and problem solving Ideas<br />
-          with new and emerging<br />
-          Development technologies<br />
-          Love for Astronomy and Geometry<br />
-          <br />
-          Emerging Interest in <br />
-          Data Science and Machine Learning<br />
-        </div>
-      </div>
-      <hr />
-      <div>
-        <div class="heading">Skillset</div>
-        <div class="details">
+    <div id="contact">
+      <h2>Say Something!</h2>
+      <form>
+        <div>
           <div>
-            <strong>Web Technologies</strong><br />
-            MongoDb, ExpressJS<br />
-            ReactJS, NodeJS<br />
-          </div>
-          <div>
-            <strong>Languages</strong><br />
-            C, C++, Python<br />
-            Javascript
+            <input type="text" name="fname" placeholder="First Name" />
+            <input type="text" name="lname" placeholder="Last Name" />
+            <textarea name="message">Your Message Here!</textarea>
           </div>
         </div>
-      </div>
-      <hr />
+        <button onclick="handleFormSubmit(event);">Submit</button>
+      </form>
     </div>
+    <a
+      href="mailto:no-one@snai1mai1.com?subject=look at this website&body=Hi,I found this website and thought you might like it http://www.geocities.com/wowhtml/"
+      id="sendmail"
+    ></a>
+    <hr />
     <footer>
       <a href="http://instagram.com/chanchalmishra_" target="_blank"
         ><span
